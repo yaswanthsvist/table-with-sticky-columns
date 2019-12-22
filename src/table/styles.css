@@ -1,0 +1,41 @@
+table {
+  display: block;
+  overflow: scroll;
+  height: 100%;
+  width: 100%;
+  border-spacing: 0;
+}
+thead tr th,
+tbody tr td,
+tbody tr th {
+  white-space: nowrap;
+  background-color: #fefefe;
+  padding: 5px;
+  border-bottom: 1px solid #888;
+}
+tr.emptyCelles td {
+  padding: 5px;
+  height: 32px;
+}
+
+.empty-cell {
+  background-color: #ddd;
+  height: 100%;
+  border-radius: 32px;
+}
+.sticky-item {
+  position: sticky;
+  left: 0;
+  border-right: 1px solid #888;
+  background-color: #efefef;
+  border-left: 1px solid #888;
+}
+.sticky-header th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  border-bottom: 1px solid #888;
+}
+th.sticky-item {
+  z-index: 2;
+}
