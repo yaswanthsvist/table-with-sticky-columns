@@ -1,0 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.custom-table {
+  height: 300px;
+  width: 514px;
+}

@@ -1,10 +1,24 @@
 # table-with-sticky-columns
+
 React custom table with sticky columns and headers
 
-By default first row is considered as header for table and its sticked to top of the able
+By default first row is considered as header for table and its sticked to top of the table
 
-if you want to stick a column on the left side while scrolling then you have to configure 
+```
+npm i --save table-with-sticky-columns
+```
+
+## You can find the example in example folder and test this library
+
+```
+cd example
+npm i
+npm start
+```
+
+if you want to stick a column on the left side while scrolling then you have to configure
 `stickyColumns` prop as shown bellow.
+
 ```
 const tableData={
     stickyColumns: {
@@ -24,7 +38,7 @@ import { getNewRows } from './mockData'
 import { Table } from 'table-with-sticky-columns'
 import './styles.css'
 
-const rows=[ 
+const rows=[
     ['header 1',    'header 2', ....      'header 20'   ],
     ['row:1 col:1', 'row:1 col:2', .....  'row 1 col:20'],
     ....
@@ -67,8 +81,8 @@ function App() {
 }
 ```
 
-
 in `./style.css`
+
 ```css
 * {
   box-sizing: border-box;
@@ -82,4 +96,3 @@ in `./style.css`
   width: 514px;
 }
 ```
-
